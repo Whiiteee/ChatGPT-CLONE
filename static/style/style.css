@@ -1,19 +1,19 @@
-body{
+body {
     background-color: #212121;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     margin: 0px;
     padding: 0px;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     height: 100vh;
     width: 100vw;
 
 }
 
-.side-bar{
+.side-bar {
     height: 100vh;
     width: 20vw;
     background-color: #171717;
@@ -23,17 +23,17 @@ body{
 
 }
 
-.chat-container{
+.chat-container {
     display: flex;
     height: 100vh;
     width: 80vw;
     padding: 0px;
-    /* justify-content: center; */
+    /* justify-content:space-evenly; */
     background-color: #212121;
     flex-direction: column-reverse;
 }
 
-.chat-input{
+.chat-input {
     display: flex;
     height: 40px;
     font-size: 20px;
@@ -43,5 +43,5 @@ body{
     color: white;
     border: none;
     border-radius: 30px;
-    
+
 }

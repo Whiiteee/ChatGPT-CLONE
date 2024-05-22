@@ -1,4 +1,5 @@
 from flask import Flask,render_template,redirect
+from socket import gethostname,gethostbyname
 
 app = Flask(__name__)
 
@@ -11,4 +12,4 @@ def index():
     return render_template("index.html")
 
 if "__main__" == __name__:
-    app.run(port=80,debug=True)
+    app.run(host=gethostbyname(gethostname()),port=80,debug=True)
