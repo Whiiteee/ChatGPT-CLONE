@@ -33,12 +33,17 @@ body {
     flex-direction: column-reverse;
 }
 
+.chat-box{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .chat-input {
     display: flex;
     height: 40px;
     font-size: 20px;
     padding: 5px 30px;
-    margin: 40px 5vh;
+    margin: 40px 25vw;
     background-color: #2f2f2f;
     color: white;
     border: none;
