@@ -11,20 +11,25 @@
 
 <body>
     <div class="flex-container">
-        <div class="side-bar">
+        <div class="side-bar" id="side-bar">
             <div>
-                <span>New Chat</span>
+                <span onclick="hide_this_bar()" id="new-chat">New Chat</span>
             </div>
         </div>
         <div class="chat-container">
 
             <div class="chat-history"></div>
                 
-            </div class="chat-box">
+            <!-- </div class="chat-box"> -->
 
             <input type="text" class="chat-input" placeholder="Message Me!">
-        </div>
+        <!-- </div> -->
     </div>
+    <script>
+        function hide_this_bar(){
+            document.getElementById("side-bar").hidden=true;
+        }
+    </script>
 </body>
 
 </html>
