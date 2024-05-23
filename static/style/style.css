@@ -17,41 +17,40 @@ body {
 
 .side-bar {
     height: 100vh;
-    width: 0vw;
     background-color: #171717;
-    /* position: fixed; */
     overflow-x: hidden;
     overflow-y: auto;
-
+    transition: width 0.5s;
+}
+.side-bar-hide{
+    width: 0vw;
 }
 
 .side-bar-show{
     width: 25vw;
 }
 
-.side-bar-hide{
-    width: 0vw;
-}
-/* .side-bar {
-    height: 100vh;
-    width: 25vw;
-    background-color: #171717;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-} */
 
 
 .chat-container {
     display: flex;
     height: 100vh;
-    width: 75vw;
     padding: 0px;
     align-items: center;
     background-color: #212121;
     flex-direction: column-reverse;
+    transition: width 0.5s;
 }
 
+
+
+.chat-container-expand{
+    width: 100vw
+}
+
+.chat-container-shrink{
+    width: 75vw;
+}
 
 
 .chat-input {
@@ -71,28 +70,42 @@ body {
 
 
 .menubar{
-    padding-top: 15px;
-    padding-left: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1vw;
+    padding-left: 1vw;
     position: fixed;
+    transition: 0.5s;
 }
 
 .menubar .bar1,.bar2,.bar3{
     width: 35px;
     height: 5px;
     background-color: white;
-    margin: 6px 10px;
+    margin: 3px 3px;
     border-radius: 4px;
     transition: 0.5s;
 }
 
+.menubar-change{
+    padding-left: 25vw;
+    padding-bottom: 1vw;
+    padding-right: 1vw;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
 .menubar-change .bar1{
     transform: translate(0,11px) rotate(-45deg);
+    background-color: grey;
 }
 .menubar-change .bar2{
     opacity: 0;
 }
 .menubar-change .bar3{
     transform: translate(0,-11px) rotate(45deg);
+    background-color: grey;
 }
 
 
