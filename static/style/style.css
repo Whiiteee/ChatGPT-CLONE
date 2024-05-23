@@ -13,15 +13,34 @@ body {
 
 }
 
+
+
 .side-bar {
     height: 100vh;
-    width: 25vw;
+    width: 0vw;
     background-color: #171717;
     /* position: fixed; */
     overflow-x: hidden;
     overflow-y: auto;
 
 }
+
+.side-bar-show{
+    width: 25vw;
+}
+
+.side-bar-hide{
+    width: 0vw;
+}
+/* .side-bar {
+    height: 100vh;
+    width: 25vw;
+    background-color: #171717;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+} */
+
 
 .chat-container {
     display: flex;
@@ -49,7 +68,11 @@ body {
 
 }
 
+
+
 .menubar{
+    padding-top: 15px;
+    padding-left: 15px;
     position: fixed;
 }
 
@@ -58,6 +81,7 @@ body {
     height: 5px;
     background-color: white;
     margin: 6px 10px;
+    border-radius: 4px;
     transition: 0.5s;
 }
 
