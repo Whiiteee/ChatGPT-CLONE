@@ -14,9 +14,11 @@ def home_2():
 
 @app.route('/chat/<path:path>',methods=["GET","POST"])
 def index(path):
+    print()
     if request.method == "POST":
-        return
-    return render_template("index.html")
+        return dumps({"response":"Done"})
+    else:
+        return render_template("index.html")
 
 
 
