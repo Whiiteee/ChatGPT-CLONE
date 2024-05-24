@@ -1,4 +1,4 @@
-a = document.getElementById("send-button");
+send_button = document.getElementById("send-msg");
 
 
 function change_display(){
@@ -8,7 +8,7 @@ function change_display(){
     
 }
 
-addEventListener("click",function(){
+send_button.addEventListener("click",function(){
     send_msg = fetch("/chat/user/send-msg");
     print(send_msg.then())
 });
