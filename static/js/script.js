@@ -1,10 +1,14 @@
 const send_button = document.getElementById("send-msg");
 
 
-function change_display() {
-    document.getElementById("menu-bar").classList.toggle("menubar-change");
-    document.getElementById("side-bar").classList.toggle("side-bar-show");
-    document.getElementById("chat-container").classList.toggle("chat-container-shrink");
+function change_display(array_of_ids,array_of_classes) {
+    let ele = (id,class_Name)=>{
+        document.getElementById(id).classList.toggle(class_Name);
+    };
+    for (let index = 0; index < array_of_classes.length; index++) {
+        ele(array_of_ids[index],array_of_classes[index]);
+        
+    };
 
 }
 
