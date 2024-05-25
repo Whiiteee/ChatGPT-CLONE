@@ -198,5 +198,8 @@ body {
     .msg-box-bot,.msg-box-user{
         margin: 10px 0px;
     }
+    .send-button-hide{
+        display: none;
+    }
     
 }
